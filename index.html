@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Zaid Bakery | M.Z.B</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White theme */
+            color: #333333; /* Dark grey for text */
+            line-height: 1.6;
+        }
+
+        /* Brand Logo */
+        .brand {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .brand .m { color: #ff6600; } /* Orange for M */
+        .brand .z { color: #ffffff; background-color: #666666; padding: 0 5px; } /* White Z on grey */
+        .brand .b { color: #00aa00; } /* Green for B */
+
+        /* Navigation */
+        nav {
+            background-color: #f0f0f0; /* Light grey accent */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff6600; /* Orange hover */
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+            color: #666666; /* Premium grey */
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 100px 20px;
+            animation: fadeIn 2s ease-in;
+        }
+        #hero h1 {
+            font-size: 3em;
+            color: #333333;
+        }
+        #hero p {
+            font-size: 1.2em;
+            color: #666666;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #f9f9f9; /* Light grey accent */
+        }
+
+        /* Gallery Section */
+        #gallery {
+            background-color: #ffffff;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .upload-btn {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        /* Menu Section */
+        #menu {
+            background-color: #f9f9f9;
+        }
+        .menu-item {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #ffffff;
+            text-align: center;
+        }
+        #contact a {
+            color: #00aa00; /* Green for WhatsApp */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animated {
+            animation: fadeIn 1s ease-in;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .brand { font-size: 2em; }
+            #hero h1 { font-size: 2em; }
+            nav a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <span class="m">M</span><span class="z">Z</span><span class="b">B</span>
+        </div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="animated">
+        <h1>Welcome to Mohammed Zaid Bakery</h1>
+        <p>Fresh, delicious baked goods crafted with love.</p>
+    </section>
+
+    <section id="about" class="animated">
+        <h2>About Us</h2>
+        <p>Mohammed Zaid Bakery, known as M.Z.B, is dedicated to providing the finest baked goods in Ahmedabad. Our passion for baking ensures every item is made with premium ingredients and care.</p>
+    </section>
+
+    <section id="gallery" class="animated">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Placeholder images; in a real site, these would be dynamic -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/250x200?text=Bread" alt="Bread">
+                <button class="upload-btn">Upload Photo</button>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/250x200?text=Cake" alt="Cake">
+                <button class="upload-btn">Upload Photo</button>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/250x200?text=Pastry" alt="Pastry">
+                <button class="upload-btn">Upload Photo</button>
+            </div>
+            <!-- Add more as needed -->
+        </div>
+        <p style="text-align: center; margin-top: 20px;">Share your favorite moments with us!</p>
+    </section>
+
+    <section id="menu" class="animated">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150?text=Bread" alt="Bread">
+            <p>Fresh Bread</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150?text=Cake" alt="Cake">
+            <p>Delicious Cakes</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150?text=Pastry" alt="Pastry">
+            <p>Savory Pastries</p>
+        </div>
+        <!-- No prices mentioned as per request -->
+    </section>
+
+    <section id="contact" class="animated">
+        <h2>Contact Us</h2>
+        <p>Address: 30/H, Narol Rd, Shakti Society, Danilimda, Ahmedabad, Gujarat 382405</p>
+        <p>WhatsApp: <a href="https://wa.me/7698973107">7698973107</a> | <a href="https://wa.me/7698263107">7698263107</a></p>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; background-color: #f0f0f0;">
+        <p>&copy; 2023 Mohammed Zaid Bakery | M.Z.B. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple animation on scroll
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        });
+        sections.forEach(section => observer.observe(section));
+
+        // Placeholder for upload functionality (in a real site, integrate with backend)
+        document.querySelectorAll('.upload-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('Upload functionality would be implemented here.');
+            });
+        });
+    </script>
+</body>
+</html>
